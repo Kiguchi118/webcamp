@@ -61,3 +61,21 @@ main{
 .title{
   margin: 15px 0 5px;
 }
+
+@media screen and (max-width:768px) {
+  main{
+    width: 100%;
+    margin: auto auto;
+  }
+
+  .step-box{
+    width: auto;
+    float: none;
+    margin: 20px;
+  }
+
+  .step-box:last-child{
+    margin-right: 20px;
+  }
+
+}
