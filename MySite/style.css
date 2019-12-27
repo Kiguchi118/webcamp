@@ -264,6 +264,43 @@ footer {
 }
 
 @media screen and (max-width:1024px) {
+  .content {
+    width: 100%;
+  }
+
+  .production-group {
+    width: 100%;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .production {
+    width: 32%;
+    margin-right: 2%;
+  }
+
+  .strength-group {
+    padding: 30px 20px 90px 20px;
+    width: 100%;
+  }
+
+  .strength {
+    width: 32%;
+    margin-right: 2%;
+  }
+
+  .discription-text {
+    padding-right: 20px;
+  }
+
+  .contact-group {
+    width: 100%;
+    padding: 30px 30px 90px 30px;
+  }
+
+}
+
+@media screen and (max-width:767px) {
   header {
     height: 50px;
   }
