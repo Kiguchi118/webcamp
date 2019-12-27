@@ -193,13 +193,12 @@ a {
 .left-content {
   float: left;
   width: 50%;
+  text-align: center;
 }
 
 .my-face {
-  width: 250px;
-  height: 250px;
-  background-image: url(img/my-icon.jpg);
-  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
   border-radius: 50%;
 }
 
@@ -264,7 +263,7 @@ footer {
   text-align: center;
 }
 
-@media screen and (max-width:767px) {
+@media screen and (max-width:1024px) {
   header {
     height: 50px;
   }
@@ -318,7 +317,7 @@ footer {
   }
 
   .content {
-    width: 90%;
+    width: 100%;
   }
 
   .main-visual-title {
@@ -334,27 +333,29 @@ footer {
   }
 
   .production-group {
-    width: 300px;
+    width: 100%;
   }
 
   .production {
     float: none;
+    width: 100%;
   }
 
   .sp-none {
     display: none;
   }
-  
+
   #feature {
     padding: 0 5%;
   }
 
   .strength-group {
-    width: 320px;
+    width: 100%;
   }
 
   .strength {
     float: none;
+    width: 100%;
     margin-top: 10px;
   }
 
@@ -382,6 +383,10 @@ footer {
 
   .discription-title:first-child {
     margin-top: 20px;
+  }
+
+  .discription-text {
+    overflow-wrap: break-word;
   }
 
   #contact {
