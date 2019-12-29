@@ -13,7 +13,7 @@ class TodolistsController < ApplicationController
   end
 
   def index
-    @lists = List.all
+    @todolists = List.all
   end
 
   def show
@@ -32,6 +32,6 @@ class TodolistsController < ApplicationController
   private
    
   def list_params
-    params.require(:list).permit(:title, :body)
+    params.require(:list).permit(:title, :body, :image)
   end
 end
