@@ -7,3 +7,62 @@
     <p>画像</p>
     <%= attachment_image_tag list, :image, :fill, 100, 100, format: 'jpeg' %>
 <% end %>
+
+
+
+
+
+<h1>
+    ようこそ
+    <strong>Bookers</strong>
+    へ！
+</h1>
+<p>
+    <strong>Bookers</strong>
+    では，さまざまな書籍に関するあなたの意見や<br>
+    印象を共有し交換することができます．
+</p>
+
+<p>
+    <a href="/books">start</a>
+</p>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff;
+    color: #333;
+    font-family: verdana, arial, helvetica, sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    margin: 33px;
+}
+
+p, ol, ul, td {
+    font-family: verdana, arial, helvetica, sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    margin: 33px;
+}
+
+strong {
+    font-weight: bold;
+}
+
+a {
+    color: #000;
+}
+
+a:visited {
+    color: #666;
+}
+
+a:hover {
+    background-color: black;
+    color: white;
+    text-decoration: underline;
+}
