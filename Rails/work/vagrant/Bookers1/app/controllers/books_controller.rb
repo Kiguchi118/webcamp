@@ -14,20 +14,14 @@ class BooksController < ApplicationController
     @books = Book.all.order(created_at: :asc)
     @book = Book.new(book_params)
     respond_to do |format|
-    if @book.save
-      format.html { redirect_to  @book, notice: 'Book was successfully created.' }
-      format.json { render :show, status: :created, location: @book }
-    else
-      format.html { render :index }
-      format.json { render json: @book.errors, status: :unprocessable_entity }
+      if @book.save
+        format.html { redirect_to  @book, notice: 'Book was successfully created.' }
+        format.json { render :show, status: :created, location: @book }
+      else
+        format.html { render :index }
+        format.json { render json: @book.errors, status: :unprocessable_entity }
+      end
     end
-  end
-  end
-
-  def show
-  end
-
-  def edit
   end
 
   def update
