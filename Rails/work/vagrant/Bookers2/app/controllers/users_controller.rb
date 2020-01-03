@@ -34,10 +34,10 @@ class UsersController < ApplicationController
   	params.require(:user).permit(:name, :introduction, :profile_image)
   end
 
-   def baria_user
+  def baria_user
   	unless params[:id].to_i == current_user.id
   		redirect_to user_path(current_user)
   	end
-   end
+  end
 
 end
