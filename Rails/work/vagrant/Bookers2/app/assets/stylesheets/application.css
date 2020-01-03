@@ -13,6 +13,7 @@
  *= require_tree .
  *= require_self
  */
+<<<<<<< HEAD:Rails/work/vagrant/Bookers2/app/assets/stylesheets/application.scss
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
@@ -55,3 +56,5 @@ a {
 a:visited {
     color: #666;
 }
+=======
+>>>>>>> parent of 882c573... [Finish] Bookers2:Rails/work/vagrant/Bookers2/app/assets/stylesheets/application.css
